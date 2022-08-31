@@ -1,6 +1,9 @@
 # Comment added for commiting purposes
 pool:
-  vmImage: 'ubuntu-20.04'
+  vmImage: 'MyAgentPool'
+  demands:
+  - npm
+  - agent.name -equals MyLinuxAgent
 
 variables:
   buildConfiguration: 'Release'
